@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>Finding an element in an Array
+    </title>
+</head>
+<body>
+    <script>
+
+    const lang = ["PHP", "Java", "C++", "Python"];
+    let stringx = prompt("Type a string to check if it's in the array. (Case sensitive)");
+    let look = 0;
+    for (let i=0; i < lang.length; i++)
+    {
+      if(lang[i]==(stringx))
+      {
+        look = 1;
+      }
+    }
+    booleanfnd = (look==1);
+
+    alert("Please check the console log for the results!");
+    console.log(booleanfnd);
+    </script>
+</body>
