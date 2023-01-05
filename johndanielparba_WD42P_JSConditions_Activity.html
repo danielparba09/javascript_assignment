@@ -11,7 +11,7 @@
                     aa = parseInt(aa);
                     ab = parseInt(ab);
 
-                    alert("Please check the console log for the results!");
+                    
                     if (aa==ab){
                         console.log("The two numbers are equal to each other.");
                     } else if (aa>ab){
@@ -21,6 +21,8 @@
                     } else {
                         console.log("You have invalid inputs.");
                     }
+
+                    alert("Please check the console log for the results! Refresh the page to try again.");
                     break;
                 case "2":
                     alert("You have chosen activity 2: Find the largest of three number. Click OK to proceed");
@@ -41,7 +43,7 @@
                     }
                     }
 
-                    alert("Please check the console log for the results!");
+                    alert("Please check the console log for the results! Refresh the page to try again.");
                     console.log(arr[2] + " is the largest of the three numbers.");
                     break;
                 case "3":
@@ -57,7 +59,7 @@
                     let cdiv = ca / cb;
                     let crmd = ca % cb;
 
-                    alert("Please check the console log for the results!");
+                    alert("Please check the console log for the results! Refresh the page to try again.");
                     console.log(ca + " + " + cb + " = " + cadd + ".");
                     console.log(ca + " - " + cb + " = " + csub + ".");
                     console.log(ca + " * " + cb + " = " + cmul + ".");
@@ -70,21 +72,23 @@
 
                     if (grade < 0 || grade > 100){
                         alert('Invalid grade, outside range 0-100');
-                        }else if (grade > 90){
+                        }else if (grade >= 90){
                             console.log("S grade.");
-                        }else if (grade > 80){
+                        }else if (grade >= 80){
                             console.log("A grade.");
-                        }else if (grade > 70){
+                        }else if (grade >= 70){
                             console.log("B grade.");
-                        }else if (grade > 60){
+                        }else if (grade >= 60){
                             console.log("C grade.");
-                        }else if (grade > 50){
+                        }else if (grade >= 50){
                             console.log("D grade.");
-                        }else if (grade > 40){
+                        }else if (grade >= 40){
                             console.log("E grade.");
                         }else{                          
                             console.log("Student has failed.");
                         }
+                    
+                    alert("Please check the console log for the results! Refresh the page to try again.");
                     break;
                 case "5":
                     alert("You have chosen activity 5: Find the number of days in a given month of a year. Click OK to proceed");
@@ -102,7 +106,7 @@
                         break;
                         case 2:
                             if(leapyear == true){
-                            console.log("February has 29 days.");
+                            console.log("February has 29 days since year " + actyear + " is a leap year.");
                             } else {
                             console.log("February has 28 days.");
                             }
@@ -140,6 +144,8 @@
                         default:
                         alert("You have invalid inputs. Please refresh the page to try again");
                     }
+
+                    alert("Please check the console log for the results! Refresh the page to try again.");
                     break; 
                 default:
                     alert("You have invalid inputs. Please refresh the page to try again");
