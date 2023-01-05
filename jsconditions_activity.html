@@ -1,0 +1,149 @@
+<html>
+    <body>
+        <script>
+            var actnum = prompt("Please input the number of the javascript condition activity you want to execute.")
+
+            switch (actnum){
+                case "1": 
+                    alert("You have chosen activity 1: Find the largest of two numbers. Click OK to proceed");
+                    let aa = prompt("Please input your first number.");
+                    let ab = prompt("Please input your second number.");
+                    aa = parseInt(aa);
+                    ab = parseInt(ab);
+
+                    alert("Please check the console log for the results!");
+                    if (aa==ab){
+                        console.log("The two numbers are equal to each other.");
+                    } else if (aa>ab){
+                        console.log(aa + " is larger than " + ab);
+                    } else if (aa<ab){
+                        console.log(ab + " is larger than " + aa);
+                    } else {
+                        console.log("You have invalid inputs.");
+                    }
+                    break;
+                case "2":
+                    alert("You have chosen activity 2: Find the largest of three number. Click OK to proceed");
+                    arr = [];
+                    for (let p = 0; p < 3; p++) {
+                    arr[p] = prompt("Insert " + (p + 1) + " out of " + 3 + " numbers.");
+                    arr[p] = parseInt(arr[p]);
+                    }
+
+                    for (let i = 0; i < arr.length; i++) {
+                    for (let j = i + 1; j < arr.length; j++) {
+                    let temp = 0;
+                    if (arr[j] < arr[i]) {
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                    }
+                    }
+                    }
+
+                    alert("Please check the console log for the results!");
+                    console.log(arr[2] + " is the largest of the three numbers.");
+                    break;
+                case "3":
+                    alert("You have chosen activity 3: Perform arithmetic operations on two numbers. Click OK to proceed");
+                    let ca = prompt("Please input your first number.");
+                    let cb = prompt("Please input your second number.");
+                    ca = parseInt(ca);
+                    cb = parseInt(cb);
+
+                    let cadd = ca + cb;
+                    let csub = ca - cb;
+                    let cmul = ca * cb;
+                    let cdiv = ca / cb;
+                    let crmd = ca % cb;
+
+                    alert("Please check the console log for the results!");
+                    console.log(ca + " + " + cb + " = " + cadd + ".");
+                    console.log(ca + " - " + cb + " = " + csub + ".");
+                    console.log(ca + " * " + cb + " = " + cmul + ".");
+                    console.log(ca + " / " + cb + " = " + cdiv + ". The remainder is " + crmd +".");
+                    break;
+                case "4":
+                    alert("You have chosen activity 4: Find the grade of the student based on the input marks. Click OK to proceed");
+                    let grade = prompt("Please input your grade.");
+                    grade = parseInt(grade);
+
+                    if (grade < 0 || grade > 100){
+                        alert('Invalid grade, outside range 0-100');
+                        }else if (grade > 90){
+                            console.log("S grade.");
+                        }else if (grade > 80){
+                            console.log("A grade.");
+                        }else if (grade > 70){
+                            console.log("B grade.");
+                        }else if (grade > 60){
+                            console.log("C grade.");
+                        }else if (grade > 50){
+                            console.log("D grade.");
+                        }else if (grade > 40){
+                            console.log("E grade.");
+                        }else{                          
+                            console.log("Student has failed.");
+                        }
+                    break;
+                case "5":
+                    alert("You have chosen activity 5: Find the number of days in a given month of a year. Click OK to proceed");
+                    var actmonth = prompt("Please input month number.");
+                    var actyear = prompt("Please input month number.");
+                    leapyear = null;
+                    leapyear = (((actyear%4 == 0)&&(actyear%100 != 0))||(actyear%400 == 0));
+                    actmonth = parseInt(actmonth);
+                    actyear = parseInt(actyear);
+
+
+                    switch(actmonth){
+                        case 1:
+                        console.log("January has 31 days.");
+                        break;
+                        case 2:
+                            if(leapyear == true){
+                            console.log("February has 29 days.");
+                            } else {
+                            console.log("February has 28 days.");
+                            }
+                        break;
+                        case 3:
+                        console.log("March has 31 days.");
+                        break;
+                        case 4:
+                        console.log("April has 30 days.");
+                        break;
+                        case 5:
+                        console.log("May has 31 days.");
+                        break;
+                        case 6:
+                        console.log("June has 30 days.");
+                        break;
+                        case 7:
+                        console.log("July has 31 days.");
+                        break;
+                        case 8:
+                        console.log("August has 31 days.");
+                        break;
+                        case 9:
+                        console.log("September has 30 days.");
+                        break;
+                        case 10:
+                        console.log("October has 31 days.");
+                        break;
+                        case 11:
+                        console.log("November has 30 days.");
+                        break;
+                        case 12:
+                        console.log("December has 31 days.");
+                        break;
+                        default:
+                        alert("You have invalid inputs. Please refresh the page to try again");
+                    }
+                    break; 
+                default:
+                    alert("You have invalid inputs. Please refresh the page to try again");
+            }
+        </script>
+    </body>
+</html>
