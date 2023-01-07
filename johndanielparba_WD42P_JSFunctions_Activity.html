@@ -1,0 +1,50 @@
+<html>
+    <body>
+        <script>
+
+function displayNumbers(){
+    txt = "";
+        for(let i = 1; i < 11; i++) {
+        txt = txt + i + " ";
+        }
+        return txt;
+    }
+
+function evenArrays(){
+    txt2 = "";
+        for(let j = 0; j < arguments.length; j++) {
+            if (parseInt(arguments[j]) % 2 == 0){
+                txt2 = txt2 + arguments[j] + " ";
+            }}
+            return txt2;    
+    }
+
+function patternLoop() {
+    txt3 = "";
+    tmp3 = ""
+        for (var k = 1; k < 6; k++) {
+            tmp3 = tmp3 + k +" ";
+            txt3 = txt3 + tmp3 + "\n";}
+        return txt3;
+    }   
+
+function countLetters(wrd) {
+    let txt4 = 0;
+    for (let x of wrd){
+        txt4 += 1}
+    return txt4;
+    }
+
+function hrsSecs(hrs) {
+    var txt5 = parseInt(hrs) * 3600;
+    return txt5;
+    } 
+
+    //console.log(displayNumbers());
+    //console.log(evenArrays(3, 4, 5, 27, 90, 52));
+    //console.log(patternLoop());
+    //console.log(countLetters("WD42P"));
+    //console.log(hrsSecs(8));
+         </script>
+    </body>
+</html>
